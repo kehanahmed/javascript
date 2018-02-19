@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>If statements</title>
+	
+</head>
+<body>
+	<p>What is the magic word?</p>
+	<p><input type="text" id="magicWord"></p>
+	<p><button id="checkMagicWord">Enter</button></p>
+
+	<script type="text/javascript">
+		document.getElementById("checkMagicWord").onclick = function() {
+			var magicWordEntered = "";
+			magicWordEntered = document.getElementById("magicWord").value;
+			var magicWord = "cool";
+
+			if(magicWordEntered == magicWord) {
+				alert("WOW,You got it!")
+			}
+			else {
+				alert("Nope, Try again!");
+			}
+		}
+	</script>
+</body>
+</html>

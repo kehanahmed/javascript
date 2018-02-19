@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Responding to a click</title>
+	
+</head>
+<body>
+	<p id="text">Hello World !</p>
+	<button id="myButton">Change Text</button>
+
+	<script type="text/javascript">
+		document.getElementById("myButton").onclick = function() {
+
+			/* 	To check either button is working or not
+			 		alert("Button is changed");
+			*/
+
+	 	document.getElementById("text").innerHTML = "Hello Developer!";
+			
+		}
+
+		
+
+	</script>
+</body>
+</html>

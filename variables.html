@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<head>
+    	<title>Variables</title>
+    </head>
+    <body>
+    	<input type="text" id="inputText">
+        <button id="textChanger">Change the text</button>
+        <p id="text">This is something interesting.</p>
+
+        <script type="text/javascript">
+            /* changes the above paragraph by clicking on the button of the input field using variable*/
+            document.getElementById("textChanger").onclick = function() {
+                var textEntered = "";
+                textEntered = document.getElementById("inputText").value;
+                document.getElementById("text").innerHTML = textEntered;
+            }
+
+        </script>
+    </body>
+</html>

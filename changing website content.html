@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>Changing Website Content</title>
+	
+</head>
+<body>
+	<p id="text">Hello World !</p>
+	<button id="myButton">Change Text</button>
+
+	<p id="secondParagraph">Javascript is ... </p>
+	<button id="secondButton">Append text</button>
+
+	<p id="emptyParagraph"></p>
+	<button id="createParagraph">Create Text</button>
+
+
+	<script type="text/javascript">
+		/* in order to change the text on a click button */
+		document.getElementById("myButton").onclick = function() {
+
+			/* 	To check either button is working or not
+			 		alert("Button is changed");  */
+
+	 	document.getElementById("text").innerHTML = "Hello Developer!"; 
+	 }
+
+	 	/* in order to append/add a text on a click button */
+	 	document.getElementById("secondButton").onclick = function() {
+	 		document.getElementById("secondParagraph").innerHTML ="I think " + document.getElementById("secondParagraph").innerHTML + "Awesome!";	 	
+	 }
+
+	 	/* in order to create a text on a click button */
+	 	document.getElementById("createParagraph").onclick = function() {
+	 		document.getElementById("emptyParagraph").innerHTML = "<h1>Hi there!</h1>";
+
+	 	}
+
+		
+
+	</script>
+</body>
+</html>

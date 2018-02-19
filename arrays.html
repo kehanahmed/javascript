@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+    	<title>Arrays</title>
+    </head>
+    <body>
+    	
+        <script type="text/javascript">
+           var myArray = new Array();
+           myArray[0] = "Pizza";
+           myArray[1] = "Chocolate";
+           myArray[2] = "Burger";
+
+    /* It will show the items present in the array in the console window (chrome)
+           console.log(myArray); */
+    /* It will show the length of array in the console window (chrome)
+           console.log(myArray.length); */
+
+           var arr = ["Morning Everybody!", "I love coffee!"];
+
+    /* push an item 'back to work' to the last index of an array*/
+           arr.push("Back to work!");
+
+    /* remove/delete one item i.e, 'i love coffee' because it is at index 1 (and delete 1 item) 
+           arr.splice(1, 1) */
+    /* this will add an item i.e, 'Cornflakes for breakfast' just before 'i love coffee' and will not delete any item because we pass 1,0 in splice function   
+           arr.splice(1,0,"Cornflakes for breakfast!"); */
+
+
+    /* this will delete item 'i love coffee' because it is at index 1 after then it will add 'cornflakes for breakfast' and ' happiness' */
+           arr.splice(1,1,"Cornflakes for breakfast!", "Happiness");   //the final array will show ["morning everybody", "cornflakes for breakfast", "happiness", "back to work"]
+           console.log(arr);
+
+
+
+        </script>
+    </body>
+</html>

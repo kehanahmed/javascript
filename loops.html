@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>Loops</title>
+	
+</head>
+<body>
+
+	<div id="tweetDiv"></div>
+
+	<script type="text/javascript">
+	     /* Array of name 'tweets' */
+		var tweets = ["Hello everyone!", "I love Pakistan!", "Discount offer for Pizza lovers!", "Today is Rain!", "Good Evening!"];
+		var tweetString = "";
+		
+		for(var i=0; i<tweets.length;i++) {
+			tweetString = tweetString + "<p>" + tweets[i] + "</p>";
+		}
+
+
+	/*  The above code can also be executed using while loop! 
+		var i = 0;
+		while (i < tweets.length) {
+			tweetString = tweetString + "<p>" + tweets[i] + "</p>";
+			i++; }  
+			document.getElementById("tweetDiv").innerHTML = tweetString;  */
+
+		document.getElementById("tweetDiv").innerHTML = tweetString;
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>Random Color</title>
+	
+	<style>
+		
+		#box{
+			width: 200px;
+			height: 200px;
+			background-color: black;
+		}
+
+
+
+
+	</style>
+
+
+</head>
+<body>
+	<h1>Random Colors</h1>
+	<div id="box"></div>
+	<p><button id="randomColor">Click to Change Color!</button></p>
+
+	<script type="text/javascript">
+		function getRandomColor() {
+		var letters = '0123456789ABCDEF';
+		var color = '#';
+		for (var i = 0; i < 6; i++) {
+		color += letters[Math.floor(Math.random() * 16)];
+		}
+		return color;
+		}
+
+		document.getElementById("randomColor").onclick = function() {
+			document.getElementById("box").style.backgroundColor = getRandomColor();
+
+		}
+
+		
+	</script>
+</body>
+</html>
